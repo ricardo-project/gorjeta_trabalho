@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora de Gorjeta pro Vitor</title>
+        <meta charset=UTF-8>
+        <link rel="shortcut icon" type="image/x-icon" href="https://image.flaticon.com/icons/png/512/189/189093.png">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Dancing+Script">
+        <link rel=stylesheet href="style.css">
+    </head>
+    <body>
+        <section>
+            <div id=me>
+                <img src="eu só que como desenho.png">
+                <p>By Ricardo</p>
+            </div>
+            <div id=mens><b></b></div>
+        </section>
+        <main>
+            <fieldset>
+                <div><b>Calculadora de Gorjeta</b></div>
+                <div>
+                    <p style="margin-top: 50px; font-size: 20px; font-family: Roboto">Para limpar os campos numéricos, use os seguintes atalhos:</p>
+                    <table>
+                        <tr>
+                            <th>Valor da conta</th>
+                            <th>Número de pessoas</th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://img.icons8.com/ios/452/shift.png"> + A</th>
+                            <th><img src="https://img.icons8.com/ios/452/shift.png"> + S</th>
+                        </tr>
+                    </table>
+                    <hr>
+                    <div class=inform>
+                        <p>Informe a moeda pro valor da conta</p>
+                        <p><select class=entrada></select></p>
+                    </div>
+                    <p class=obs>As relações entre as moedas acima estão baseada em<br>suas cotações na semana de 27/9/20 até 3/10/20,portanto<br>elas podem estar <b>desatualizadas</b>.</p>
+                    <hr>
+                    <div class=inform>
+                        <div class=dImp>
+                        <div>
+                            <figure>
+                                <img src="https://image.flaticon.com/icons/png/512/179/179386.png">
+                            </figure>
+                            <div>
+                                <div></div>
+                                <div>Este valor NÃO é<br>um número!</div>
+                            </div>
+                        </div>Insira abaixo o valor da conta</div>
+                        <p><input type=number class=entrada min=0 step=1></p>
+                    </div>
+                    <p class=obs><b>OBSERVAÇÃO IMPORTANTE!</b> Caso o valor do real for dado com mais de dois dígitos decimais e for positivo ele será reduzido ao múltiplo de 0,01 mais próximo.</p>
+                    <hr>
+                    <div class=inform>
+                        <p>Selecione a qualidade do atendimento</p>
+                        <p><select class=entrada style="background: darkblue"></select></p>
+                    </div>
+                    <p class=obs>As porcentagens acima indicam um acréscimo em relação ao valor da conta, correspondente à gorjeta entregue ao garçom, de acordo com a qualidade do atendimento. <b>Mais qualidade, mais porcentagem de ganho!</b></p>
+                    <hr>
+                    <div class=inform>
+                        <div class=dImp>
+                        <div>
+                            <figure>
+                                <img src="https://image.flaticon.com/icons/png/512/179/179386.png">
+                            </figure>
+                            <div>
+                                <div></div>
+                                <div>Este valor NÃO é<br>um número!</div>
+                            </div>
+                        </div> Quantas pessoas estão<br>juntas contigo?</div>
+                        <p><input type=number class=entrada min=0 step=1></p>
+                    </div>
+                    <p class=obs style="width: 70%">Este valor deve compreender o conjunto dos números naturais não-nulos. Caso contrário, a calculadora não funcionará (<i>como seria compartilhar a conta com uma pessoa e meia?</i>)!</p>
+                    <hr>
+                    <div class=inform style="margin-bottom: 80px">
+                        <p>Informe a moeda pra gorjeta</p>
+                        <p><select class=entrada></select></p>
+                    </div>
+                </div>
+            </fieldset>
+        </main>
+        <canvas width=1920 height=200></canvas>
+    </body>
+    <script src="index.js"></script>
+</html>

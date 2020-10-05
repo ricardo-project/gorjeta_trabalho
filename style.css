@@ -1,0 +1,232 @@
+body {
+    margin: 0px;
+    background: rgb(60,60,60)
+} p, .dImp {
+    text-align: center;
+    color: white;
+    margin: 10px auto;
+    font-size: 32px;
+} fieldset {
+    font-family: Raleway;
+    width: 750px;
+    padding: 0px;
+    border-radius: 40px;
+    border: none;
+    overflow: hidden;
+    background: linear-gradient(rgb(180,180,180), rgb(160,160,160));
+    box-shadow: black 0px 0px 20px inset;
+    margin: 0px auto;
+} fieldset > div {
+    /*OBSERVAÇÃO: o código abaixo desabilita a seleção de textos ("highlighting selection") e foi copiada do seguinte link: "https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting"*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox (versões antigas) */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Outros casos*/
+} fieldset > div:nth-child(1) {
+    font-family: Oswald;
+    margin: 0px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    padding: 20px 0px;
+    background: rgb(110,110,110);
+    box-shadow: black 0px 0px 20px;
+} fieldset > div:nth-child(2) {
+    padding: 30px;
+    padding-top: 0px;
+} .inform {
+    position: relative;
+    height: 120px;
+} fieldset > div > b {
+    margin: 0px;
+    animation: fundoMove 13s infinite linear;
+    transition: filter 0.25s ease
+} .inform > img {
+    position: absolute;
+    height: 0px;
+    animation: moveAngle 2s infinite ease-in-out;
+    filter: drop-shadow(rgba(0,0,0,0.4) 3px 3px 0px);
+    transition: all 0.4s ease;
+} .inform > p, .dImp {
+    font-weight: bold;
+} section {
+    position: fixed;
+    color: white;
+    z-index: 1;
+    margin-top: 50%;
+    width: 100%;
+} section > div {
+    position: absolute;
+    bottom: 0px;
+} section > div#me {
+    display: none;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    transition: all 1s ease
+} section > div#me > img {
+    width: 0px;
+    height: 0px;
+    transform: rotate(-90deg);
+    transition: all 0.7s ease
+} section > div#me > p {
+    font-family: Dancing Script;
+    font-size: 20px;
+    filter: drop-shadow(rgba(0,0,0,0.25) 3px 3px 0px);
+    transition: all 0.5s ease
+} section > div#mens {
+    display: none;
+    align-items: flex-end;
+    justify-content: flex-end;
+    opacity: 0;
+    font-family: Raleway;
+    height: 180px;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7));
+    font-family: Roboto;
+    width: 100%;
+    transition: all 0.3s ease
+} @media only screen and (min-width: 0px) {
+    section > div#mens {
+        font-size: 105px;
+    }
+} @media only screen and (min-width: 900px) {
+    section > div#mens {
+        font-size: 145px;
+    }
+} section > div#mens > b {
+    margin: 30px;
+    min-width: max-content;
+    animation: fundoMoveAviso 20s infinite linear;
+    transition: all 0.3s ease;
+} fieldset > div > b, section > div#mens > b {
+    filter: drop-shadow(rgba(0,0,0,0.4) 6px 6px 0px);
+    cursor: pointer;
+} fieldset > div > b:hover, section > div#mens > b:hover {
+    filter: drop-shadow(rgba(0,0,0,0.4) 6px 6px 7px)
+} table {
+    font-family: Roboto;
+    color: rgb(120,120,120);
+    border-spacing: 10px;
+    margin: 0px auto;
+} th {
+    background: rgb(210,210,210);
+    border-radius: 20px;
+    padding: 15px;
+} th > img {
+    filter: invert(0.45);
+    height: 40px;
+} tr:nth-child(1) > th {
+    font-size: 30px;
+} tr:nth-child(2) > th {
+    font-size: 50px
+} .dImp { /*Abreviação de "Div importantes"*/
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease
+} .dImp > div > figure {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+} .dImp > div {
+    margin-right: 15px;
+    transition: all 0.5s ease;
+} .dImp > div > figure > img {
+    filter: brightness(0.85) contrast(1.5);
+    height: 70px;
+    cursor: pointer;
+    background: lightsalmon;
+    border-radius: 70px;
+    transition: all 0.5s ease;
+} .dImp > div > div {
+    display: none;
+    justify-content: center;
+    opacity: 0;
+    filter: drop-shadow(rgba(0,0,0,0.5) 0px 4px 0px);
+    transition: all 0.3s ease;
+} .dImp > div > div > div {
+    transition: all 0.3s ease;
+    position: absolute;
+} .dImp > div > div > div:nth-child(1) {
+    margin-top: 20px;
+    border-bottom: 10px solid seashell;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+} .dImp > div > div > div:nth-child(2) {
+    margin-top: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    color: rgb(70,70,70);
+    padding: 5px;
+    border-radius: 20px;
+    background: seashell;
+    width: max-content;
+} main {
+    padding: 50px 0px;
+} p.obs {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 80%;
+    font-size: 16px
+} select, input[type=number] {
+    width: 250px;
+    font-family: Raleway;
+    font-size: 25px;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px;
+    cursor: pointer;
+    color: rgb(225,225,225);
+    background-color: rgb(140,140,140);
+    box-shadow: rgba(0,0,0,0.3) 0px 0px 8px inset;
+    transition: all 0.3s ease
+} select:hover, input[type=number]:hover {
+    width: 400px;
+    color: white;
+    background-color: rgb(110,110,110);
+} canvas {
+    display: none;
+} hr {
+    width: 50%;
+    height: 10px;
+    border-radius: 5px;
+    border: none;
+    background: white;
+    margin: 50px auto
+} @keyframes fundoMove {
+    from { background-position: 0px -20px }
+    to { background-position: 1920px -20px }
+} @keyframes fundoMoveAviso {
+    from { background-position: 0px -10px }
+    to { background-position: 1920px -10px}
+} @keyframes moveAngle { /*Animação de rotação para a maioria das imagens*/
+    0% { transform: rotate(20deg) }
+    50% { transform: rotate(-20deg) }
+    100% { transform: rotate(20deg) }
+} @keyframes moveAngleDislike { /*Animação de rotação pra imagem "dislike"*/
+    0% { transform: rotate(200deg) }
+    50% { transform: rotate(160deg) }
+    100% { transform: rotate(200deg) }
+} /*Configurações da barra de rolagem da página*/
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    background: rgb(120,120,120);
+    width: 26px;
+} ::-webkit-scrollbar-thumb {
+    border-radius: 13px;
+    background: rgb(200,200,200);
+}
